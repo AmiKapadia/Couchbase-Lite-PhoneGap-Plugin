@@ -74,7 +74,7 @@ You can rename your project's `www/litegap-example.html` to `index.html` at this
 
 ## Build Project via Eclipse
 
-* Open ~/MyPhonegapApp in Eclipse.
+* Open ~/MyPhonegapApp in Eclipse.  (or to use Android Studio, see [this blog post](http://web.archive.org/web/20130720035218/http://www.tricedesigns.com/2013/05/16/phonegap-android-studio/))
 
 * Build/run the project
 
