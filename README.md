@@ -6,6 +6,8 @@ It works with native code as well as Cordova / PhoneGap on iOS and Android (you 
 
 ## Quick start
 
+**Known issue:** These instructions are for 2.9, the latest 3.0 instructions are coming soon.
+
 You install LiteGap into your PhoneGap app using [plugman](https://github.com/apache/cordova-plugman) and this command (where `$PLATFORM` is either `ios` or `android`):
 
 ```
