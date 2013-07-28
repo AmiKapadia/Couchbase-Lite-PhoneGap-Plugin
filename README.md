@@ -4,17 +4,22 @@ Couchbase Lite is an embedded JSON database for occasionally connected devices. 
 
 It works with native code as well as Cordova / PhoneGap on iOS and Android (you can even sync with Mac desktops), so it doesn't matter where your users are, they can work with the data, and as soon as they get back online, everyone will see their changes.
 
+If you wanna know everything about the PhoneGap plugin system the [best docs right now are on Raymond Camden's blog](http://www.raymondcamden.com/index.cfm/2013/7/19/PhoneGap-30-Released--Things-You-Should-Know)
+
 ## Quick start
 
-**Known issue:** These instructions are for 2.9, the latest 3.0 instructions are coming soon.
 
-You install LiteGap into your PhoneGap app using [plugman](https://github.com/apache/cordova-plugman) and this command (where `$PLATFORM` is either `ios` or `android`):
+You install LiteGap into your PhoneGap app using [the PhoneGap command line tools](https://github.com/mwbrooks/phonegap-cli/) and this command (where `$PLATFORM` is either `ios` or `android`):
 
 ```
-plugman --platform $PLATFORM --project ~/MyPhonegapApp --plugin https://github.com/couchbaselabs/LiteGap.git
+npm install -g phonegap
+phonegap create MyPhoneGapApp 
+cd MyPhoneGapApp/
+phonegap local plugin add https://github.com/couchbaselabs/LiteGap.git
+phonegap run $PLATFORM
 ```
 
-So far LiteGap has only been tested with PhoneGap 2.9 and 3.0 apps. (ARC-enabled on iOS 6, and Android ) If you want to send pull requests, please modify [the code in this repo.](https://github.com/couchbaselabs/couchbase-lite-phonegap-plugin-builder)
+So far LiteGap has only been tested with PhoneGap 2.9 and 3.0 apps. (ARC-enabled on iOS 6, and Android API level 11+) If you want to send pull requests, please modify [the code in this repo.](https://github.com/couchbaselabs/couchbase-lite-phonegap-plugin-builder)
 
 ## Architecture
 
