@@ -32,6 +32,8 @@ _Note:_ Couchbase-Lite is capable of syncing with Couchbase Server or Apache Cou
 
 # Where to go from here
 
+There's an [example chat app with PhoneGap](https://github.com/couchbaselabs/CouchChat-PhoneGap) that illustrates the channel sync API. You can [read more about the app here](https://github.com/couchbaselabs/CouchChat-PhoneGap).
+
 If you made it this far, you are now ready to build your custom PhoneGap App by editing the HTML, CSS, and Javascript files under the www directory.  Your same application code will work on both the iOS and Android platforms!
 
 You might want to start with this [API reference](https://github.com/couchbase/couchbase-lite-ios/wiki/Guide%3A-REST) and this [API cheat sheet.](http://docs.couchdb.org/en/latest/api/reference.html) (For REST we use a 90% similar API as Apache CouchDB -- we'll have docs of our exact API in the next few months.)
