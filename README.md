@@ -8,14 +8,13 @@ If you wanna know everything about the PhoneGap plugin system the [best docs rig
 
 ## Quick start
 
-
 You install LiteGap into your PhoneGap app using [the PhoneGap command line tools](https://github.com/mwbrooks/phonegap-cli/) and this command (where `$PLATFORM` is either `ios` or `android`):
 
 ```
 npm install -g phonegap
 phonegap create MyPhoneGapApp 
 cd MyPhoneGapApp/
-phonegap local plugin add https://github.com/couchbaselabs/LiteGap.git
+phonegap local plugin add https://github.com/couchbaselabs/Couchbase-Lite-PhoneGap-Plugin.git
 phonegap run $PLATFORM
 ```
 
@@ -30,62 +29,6 @@ This is where LiteGap fits in the picture:
 _Note:_ your JavaScript code can also directly communicate with Couchbase Lite over a Javascript<->Native bridge, to [ask it what URL it has launched on for subsequent XHR access](https://github.com/couchbaselabs/LiteGap/blob/master/www/litegap-example.html)
 
 _Note:_ Couchbase-Lite is capable of syncing with Couchbase Server or Apache CouchDB databases running in the cloud, as [shown here](https://github.com/couchbase/couchbase-lite-android)
-
-# Prerequisites
-
-The following are required whether you are building an iOS or Android phonegap app.
-
-* Install [Phonegap](http://phonegap.com/download/)
-* Install [Plugman](https://github.com/apache/cordova-plugman)
-
-# iOS Instructions
-
-## Create iOS PhoneGap App
-
-Follow the instructions on the [Phonegap iOS Platform Guide](http://docs.phonegap.com/en/2.9.0/guide_getting-started_ios_index.md.html#iOS%20Platform%20Guide) to create an empty iOS Phonegap app.
-
-_Note:_ use the --arc flag to the `create` command if you are planning to create a project that uses ARC. (recommended)
-
-## Install Plugin to app
-
-```
-plugman --platform ios --project ~/MyPhonegapApp --plugin https://github.com/couchbaselabs/LiteGap.git
-```
-
-You can rename your project's `www/litegap-example.html` to `index.html` at this point to verify your installation. (The example only outputs to console.log)
-
-## Build Project via Xcode
-
-* Open the Xcode project under ~/MyPhonegapApp in Xcode.
-
-* Run the project
-
-* It should look something like [this](http://cl.ly/image/3B2d243C003d/Screen%20Shot%202013-07-12%20at%202.15.53%20PM.png)
-
-# Android Instructions
-
-## Create Android PhoneGap App
-
-Follow the instructions on the [Phonegap Android Platform Guide](http://docs.phonegap.com/en/2.9.0/guide_getting-started_android_index.md.html#Android%20Platform%20Guide) to create an empty Android Phonegap app.
-
-The rest of the instructions will assume you've created your app in `~/MyPhonegapApp`
-
-## Install Plugin to app
-
-```
-plugman --platform android --project ~/MyPhonegapApp/platforms/android/ --plugin https://github.com/couchbaselabs/LiteGap.git
-
-```
-
-You can rename your project's `www/litegap-example.html` to `index.html` at this point to verify your installation. (The example only outputs to console.log)
-
-## Build Project via Eclipse
-
-* Open ~/MyPhonegapApp in Eclipse.  (or to use Android Studio, see [this blog post](http://web.archive.org/web/20130720035218/http://www.tricedesigns.com/2013/05/16/phonegap-android-studio/))
-
-* Build/run the project
-
-* It should look something like [this](http://cl.ly/image/1O1v310s3Y3p/Screen%20Shot%202013-07-12%20at%2012.23.08%20PM.png).
 
 # Where to go from here
 
